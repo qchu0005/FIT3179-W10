@@ -4,10 +4,11 @@ body *{
 
 .vis-container {
       width: 100%;
+      padding: 10px;
   }
 
 .page {
-    width: 850px;
+    width: 1000px;
     background-color: white;
     margin: auto;
     padding: 50px;
@@ -15,6 +16,6 @@ body *{
 }
 
 .pure-g {
-  width: 950px;
+  width: 1000px;
   margin-bottom: 40px;
 }
