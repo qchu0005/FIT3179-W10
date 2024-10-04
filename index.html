@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 10 Visualisations</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .visualisation {
+      width: 45%;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Visualisations</h2>
+  <div class="container">
+    <!-- Map Visualization (Week 9 Homework) -->
+    <div class="visualisation" id="mapvis"></div>
+
+    <!-- Population Pyramid Visualization (Task 1 Homework) -->
+    <div class="visualisation" id="pyramidvis"></div>
+  </div>
+
+  <script type="text/javascript">
+
+    var pyramidvis = "./w10-visualization.vg.json";
+    var mapvis = "./w9-visualization.vg.json";
+
+
+    // Embed the first visualization (Map)
+    vegaEmbed('#mapvis', mapvis).then(function(result) {
+      console.log("Map visualization successfully embedded.");
+    }).catch(console.error);
+
+    // Embed the second visualization (Population Pyramid)
+    vegaEmbed('#pyramidvis', pyramidvis).then(function(result) {
+      console.log("Population pyramid successfully embedded.");
+    }).catch(console.error);
+  </script>
+</body>
+</html>
