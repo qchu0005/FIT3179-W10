@@ -1,0 +1,19 @@
+body *{
+      font-family: Arial, sans-serif;
+    }
+
+.vis-container {
+      width: 100%;
+  }
+
+.page {
+    width: 850px;
+    background-color: white;
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+}
+
+.pure-g {
+  margin-bottom: 40px;
+}
