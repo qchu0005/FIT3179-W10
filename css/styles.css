@@ -23,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;  /* Disable horizontal scrolling */
+  overflow-y: hidden;
   font-family: Arial, sans-serif;
 }
 
@@ -46,6 +47,7 @@ body {
 
 .vis-container{
   margin: auto;
+  padding: auto;
 }
 
 /* Make the visualizations responsive */
