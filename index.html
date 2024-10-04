@@ -37,17 +37,17 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-2">
-        <div id="pyramidvis" class="vis-container"></div>
+        <div id="mapvis" class="vis-container"></div>
       </div>
       <div class="pure-u-1-2">
-        <div id="mapvis" class="vis-container"></div>
+        <div id="statechartvis" class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
   
   <script type="text/javascript">
 
-    var pyramidvis = "./w10-visualization.json";
+    var statechartvis = "./w10-visualization.json";
      // Second Visualisation: Death Rates Map (Week 9 Homework)
      var mapvis =  {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -141,7 +141,7 @@
     }).catch(console.error);
 
     // Embed the second visualization (Population Pyramid)
-    vegaEmbed('#pyramidvis', pyramidvis).then(function(result) {
+    vegaEmbed('#statechartvis', statechartvis).then(function(result) {
       console.log("Population pyramid successfully embedded.");
     }).catch(console.error);
   </script>
