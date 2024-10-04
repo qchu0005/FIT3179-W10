@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Malaysia's Population in 2022 (in '000)",
-  "description": "A population pyramid for Malaysia, showing population distribution by age and gender.",
+  "description": "A population pyramid for Malaysia, showing population distribution by state",
   "data": { 
     "url": "https://raw.githubusercontent.com/qchu0005/FIT3179-W10/refs/heads/main/data/updated_population_data_state.csv",
     "format": {"type": "csv"}
