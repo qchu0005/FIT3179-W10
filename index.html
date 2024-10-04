@@ -39,15 +39,30 @@
   </style>
 </head>
 <body>
+
   <h2>Visualisations</h2>
-  <div class="container">
-    <!-- Map Visualization (Week 9 Homework) -->
-    <div class="visualisation" id="mapvis"></div>
+  <div class="page">
 
-    <!-- Population Pyramid Visualization (Task 1 Homework) -->
-    <div class="visualisation" id="pyramidvis"></div>
-  </div>
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Multiple Visualisations</h1>
+        <p>This page demonstrates how you can use pure.css grid for your layout.</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
 
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="pyramidvis" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="mapvis" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+  
   <script type="text/javascript">
 
     var pyramidvis = "./w10-visualization.json";
