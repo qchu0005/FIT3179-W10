@@ -18,7 +18,7 @@ body *{
   height: 100vh;  /* Full viewport height */
   box-sizing: border-box;
   padding: 10px;
-  overflow-x: hidden; 
+  margin: auto;
     /* width: 850px;
     background-color: white;
     margin: auto;
@@ -29,4 +29,5 @@ body *{
 
 .pure-g {
   margin-bottom: 40px;
+  overflow-x: hidden; 
 }
