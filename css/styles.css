@@ -33,7 +33,7 @@ body {
   margin: auto;
   padding: 20px;
   padding-top: 35px;
-  max-width: 1200px;  /* Maximum width to avoid stretching */
+  max-width: 2000px;  /* Maximum width to avoid stretching */
 }
 
 /* Container for visualizations using flexbox */
@@ -42,6 +42,10 @@ body {
   flex-wrap: wrap;  /* Allow wrapping if the screen is too small */
   gap: 20px;
   justify-content: space-between;
+}
+
+.vis-container{
+  margin: auto;
 }
 
 /* Make the visualizations responsive */
