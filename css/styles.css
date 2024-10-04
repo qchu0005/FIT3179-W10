@@ -7,7 +7,7 @@ body *{
   }
 
 .page {
-    width: 850px;
+    width: 1000px;
     background-color: white;
     margin: auto;
     padding: 50px;
@@ -17,48 +17,3 @@ body *{
 .pure-g {
   margin-bottom: 40px;
 }
-
-/* Ensure the body does not allow horizontal scrolling */
-/* body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;  /* Disable horizontal scrolling */
-  /* overflow-y: hidden;
-  font-family: Arial, sans-serif;
-} */
-
-/* Main container with centered content */
-/* .page {
-  width: 100%;  /* Make the page container full width */
-  /* background-color: white;
-  margin: auto;
-  padding: 20px;
-  padding-top: 35px;
-  max-width: 2500px;  /* Maximum width to avoid stretching */
-/* } 
-
-/* Container for visualizations using flexbox */
-/* .pure-g {
-  display: flex;
-  flex-wrap: wrap;  /* Allow wrapping if the screen is too small */
-  /* gap: 20px;
-  justify-content: space-between;
-}
-
-.vis-container{
-  margin: auto;
-  padding: auto;
-} */ 
-
-/* Make the visualizations responsive */
-/* iframe, svg {
-  max-width: 100%;
-  height: auto;
-} */
-
-/* Responsive handling for smaller screens */
-/* @media (max-width: 768px) {
-  .pure-u-1-2 {
-    width: 100%;  On smaller screens, make the charts take the full width */
-  /* } */
-/* } */
