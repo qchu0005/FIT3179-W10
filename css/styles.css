@@ -33,7 +33,7 @@ body {
   margin: auto;
   padding: 20px;
   padding-top: 35px;
-  max-width: 2000px;  /* Maximum width to avoid stretching */
+  max-width: 2500px;  /* Maximum width to avoid stretching */
 }
 
 /* Container for visualizations using flexbox */
