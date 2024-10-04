@@ -18,6 +18,7 @@ body *{
   height: 100vh;  /* Full viewport height */
   box-sizing: border-box;
   padding: 10px;
+  overflow-x: hidden; 
     /* width: 850px;
     background-color: white;
     margin: auto;
