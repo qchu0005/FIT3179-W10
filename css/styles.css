@@ -1,4 +1,4 @@
-body *{
+/* body *{
       font-family: Arial, sans-serif;
     }
 
@@ -16,4 +16,53 @@ body *{
 
 .pure-g {
   margin-bottom: 40px;
+} */
+
+/* Ensure the body does not allow horizontal scrolling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* Disable horizontal scrolling */
+  font-family: Arial, sans-serif;
+}
+
+/* Main container with centered content */
+.page {
+  width: 100%;  /* Make the page container full width */
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  padding-top: 35px;
+  max-width: 1200px;  /* Maximum width to avoid stretching */
+}
+
+/* Container for visualizations using flexbox */
+.pure-g {
+  display: flex;
+  flex-wrap: wrap;  /* Allow wrapping if the screen is too small */
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Ensure that each visualization container takes 100% of its column */
+.vis-container {
+  width: 100%;
+}
+
+/* Each visualization should take up half the width */
+.pure-u-1-2 {
+  width: 48%;  /* Adjusted from 50% to provide some space */
+}
+
+/* Make the visualizations responsive */
+iframe, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive handling for smaller screens */
+@media (max-width: 768px) {
+  .pure-u-1-2 {
+    width: 100%;  /* On smaller screens, make the charts take the full width */
+  }
 }
