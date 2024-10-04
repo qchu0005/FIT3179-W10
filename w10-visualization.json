@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Malaysia's Population in 2022 (in '000)",
+  "description": "A population pyramid for Malaysia, showing population distribution by age and gender.",
+  "data": { 
+    "url": "https://raw.githubusercontent.com/qchu0005/FIT3179-W10/refs/heads/main/data/updated_population_data_state.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": "datum.ethnicity == 'overall'"
+    },
+    {
+      "filter": "datum.population >= population_selector"
+    },
+    {
+      "window": [{
+        "op": "rank",
+        "as": "rank"
+      }],
+      "sort": [{"field": "population", "order": "ascending"}]  
+    
+    }
+  ],
+  "params": [
+    {
+      "name": "population_selector",
+      "value": 0,  
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 7500,  
+        "step": 50,
+        "name": "Minimum Population (in '000): "
+      }
+    }
+  ],
+  "width": 300,
+  "height": 300,
+  "layer": [
+  {
+    "mark": "bar",
+    "encoding": {
+
+"x": {
+  "field": "population",
+  "type": "quantitative",
+  "title": "Population"
+},
+"y": {
+  "field": "state",
+  "type": "nominal",
+  "title": "State",
+  "sort": {
+          "field": "population", 
+          "order": "descending"  
+        }
+},
+
+"tooltip": [
+  {"field": "state", "type": "nominal", "title": "State"},
+  {"field": "population", "type": "quantitative", "title": "Population"},
+  {"field": "rank"}
+]
+}
+},
+{
+  "mark": {
+    "type": "text",
+    "align": "left",
+    "baseline": "middle",
+    "dx": 5,  
+    "fontSize": 10
+  },
+  "encoding": {
+    "text": {
+      "condition": {
+        "test": "datum.rank == 15 || datum.rank == 16",  
+        "field": "population",
+        "type": "quantitative"
+      }
+    },
+    "x": {
+          "field": "population",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": {
+            "field": "population", 
+            "order": "descending"  
+          }
+  }
+}
+
+}
+  ]
+}
