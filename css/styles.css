@@ -44,16 +44,6 @@ body {
   justify-content: space-between;
 }
 
-/* Ensure that each visualization container takes 100% of its column */
-.vis-container {
-  width: 100%;
-}
-
-/* Each visualization should take up half the width */
-.pure-u-1-2 {
-  width: 48%;  /* Adjusted from 50% to provide some space */
-}
-
 /* Make the visualizations responsive */
 iframe, svg {
   max-width: 100%;
