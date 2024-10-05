@@ -59,8 +59,7 @@
 
 "tooltip": [
   {"field": "state", "type": "nominal", "title": "State"},
-  {"field": "population", "type": "quantitative", "title": "Population"},
-  {"field": "rank"}
+  {"field": "population", "type": "quantitative", "title": "Population"}
 ]
 }
 },
