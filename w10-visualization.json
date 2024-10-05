@@ -55,11 +55,7 @@
           "field": "population", 
           "order": "descending"  
         }
-},
-
-"tooltip": [
-  {"field": "state", "type": "nominal", "title": "State"},
-  {"field": "population", "type": "quantitative", "title": "Population"}]
+}
 }
 },
 {
